@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="unit_converter_name">Unit Converter</string>
+    <string name="bmi_calculator_name">BMI Calculator</string>
+    <string name="temperature_converter_name">Temperature Converter</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="distance">Distance</string>
+    <string name="mass">Mass</string>
+    <string name="currency">Currency</string>
+
+    <string name="bmiClassification">BMI CLASSIFICATION</string>
+</resources>

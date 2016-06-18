@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bmi_height_array">
+        <item>m</item>
+        <item>ft + in</item>
+    </string-array>
+
+    <string-array name="bmi_weight_array">
+        <item>kg</item>
+        <item>pounds</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="bmi_categories_names">
+        <item>Very Severly Underweight</item>
+        <item>Severely Underweight</item>
+        <item>Underweight</item>
+        <item>Normal</item>
+        <item>Overweight</item>
+        <item>Obese Class 1</item>
+        <item>Obese Class 2</item>
+        <item>Obese Class 3</item>item>
+    </string-array>
+
+    <string-array name="bmi_categories_values">
+        <item> &lt; 16 </item>
+        <item> 16 - 17 </item>
+        <item> 17 - 18.5 </item>item>
+        <item> 18.5 - 25 </item>item>
+        <item> 25 - 30 </item>item>
+        <item> 30 - 35 </item>item>
+        <item> 35 - 40 </item>item>
+        <item> &gt; 40 </item>
+    </string-array>
+</resources>
