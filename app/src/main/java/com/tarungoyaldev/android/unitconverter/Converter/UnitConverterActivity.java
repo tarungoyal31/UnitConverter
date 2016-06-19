@@ -16,6 +16,8 @@ import android.util.Log;
 import com.google.common.base.Preconditions;
 import com.tarungoyaldev.android.unitconverter.DrawerNavigationActivity;
 import com.tarungoyaldev.android.unitconverter.R;
+import com.viewpagerindicator.IconPagerAdapter;
+import com.viewpagerindicator.TabPageIndicator;
 
 public class UnitConverterActivity extends DrawerNavigationActivity implements  ConverterFragmentActivity {
 
@@ -48,10 +50,11 @@ public class UnitConverterActivity extends DrawerNavigationActivity implements  
 
         // The {@link ViewPager} that will host the section contents.
         ViewPager viewPager = Preconditions.checkNotNull((ViewPager) findViewById(R.id.container));
-        TabLayout tabLayout = Preconditions.checkNotNull((TabLayout) findViewById(R.id.tabs));
         viewPager.setAdapter(sectionsPagerAdapter);
 
-        tabLayout.setupWithViewPager(viewPager);
+        //Bind the title indicator to the adapter
+        TabPageIndicator tabPageIndicator = (TabPageIndicator) findViewById(R.id.titles);
+        tabPageIndicator.setViewPager(viewPager);
     }
 
     @Override
@@ -80,8 +83,20 @@ public class UnitConverterActivity extends DrawerNavigationActivity implements  
                             resources.getStringArray(R.array.mass_values),
                             resources.getString(R.string.mass));
                 case 3:
-                    return new CurrencyConverterContentHandler(
-                            resources.getString(R.string.currency), this, fragment);
+                    return new UnitConverterContentHandler(
+                            resources.getStringArray(R.array.area_names),
+                            resources.getStringArray(R.array.area_values),
+                            resources.getString(R.string.area));
+                case 4:
+                    return new UnitConverterContentHandler(
+                            resources.getStringArray(R.array.volume_names),
+                            resources.getStringArray(R.array.volume_values),
+                            resources.getString(R.string.volume));
+                case 5:
+                    return new UnitConverterContentHandler(
+                            resources.getStringArray(R.array.speed_names),
+                            resources.getStringArray(R.array.speed_values),
+                            resources.getString(R.string.speed));
             }
         } catch (InvalidDataException e) {
             Log.e(getLocalClassName(), e.toString());
@@ -110,8 +125,7 @@ public class UnitConverterActivity extends DrawerNavigationActivity implements  
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            return 5;
         }
 
         @Override
@@ -122,7 +136,11 @@ public class UnitConverterActivity extends DrawerNavigationActivity implements  
                 case 1:
                     return getString(R.string.mass);
                 case 2:
-                    return getString(R.string.currency);
+                    return getString(R.string.area);
+                case 3:
+                    return getString(R.string.volume);
+                case 4:
+                    return getString(R.string.speed);
             }
             return null;
         }

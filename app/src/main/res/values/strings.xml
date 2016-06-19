@@ -3,6 +3,7 @@
     <string name="unit_converter_name">Unit Converter</string>
     <string name="bmi_calculator_name">BMI Calculator</string>
     <string name="temperature_converter_name">Temperature Converter</string>
+    <string name="currency_converter_name">Currency Converter</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -11,6 +12,9 @@
 
     <string name="distance">Distance</string>
     <string name="mass">Mass</string>
+    <string name="area">Area</string>
+    <string name="volume">Volume</string>
+    <string name="speed">Speed</string>
     <string name="currency">Currency</string>
 
     <string name="bmiClassification">BMI CLASSIFICATION</string>

@@ -26,12 +26,17 @@
             android:name=".BmiCalculatorActivity"
             android:label="@string/bmi_calculator_name"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".TemperatureConverterActivity"
+            android:name=".Converter.TemperatureConverterActivity"
             android:label="@string/temperature_converter_name"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Converter.CurrencyConverterActivity"
+            android:label="@string/currency_converter_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>

@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.tarungoyaldev.android.unitconverter.Converter.CurrencyConverterActivity;
+import com.tarungoyaldev.android.unitconverter.Converter.TemperatureConverterActivity;
 import com.tarungoyaldev.android.unitconverter.Converter.UnitConverterActivity;
 
 public class DrawerNavigationActivity extends AppCompatActivity
@@ -60,14 +62,17 @@ public class DrawerNavigationActivity extends AppCompatActivity
             item.setChecked(true);
             if (id == R.id.nav_unit_converter) {
                 intent = new Intent(this, UnitConverterActivity.class);
-                startActivity(intent);
             } else if (id == R.id.nav_bmi_calculator) {
                 intent = new Intent(this, BmiCalculatorActivity.class);
-                startActivity(intent);
             } else if (id == R.id.nav_temperature_converter) {
                 intent = new Intent(this, TemperatureConverterActivity.class);
-                startActivity(intent);
+            } else if (id == R.id.nav_currency_converter) {
+                intent = new Intent(this, CurrencyConverterActivity.class);
+            } else {
+                return false;
             }
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

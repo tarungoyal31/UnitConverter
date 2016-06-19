@@ -26,6 +26,7 @@
         <item>5.399568E-7</item>
         <item>1.057023E-19</item>
     </string-array>
+
     <string-array name="mass_names">
         <item>kg</item>
         <item>g</item>
@@ -43,4 +44,86 @@
         <item>0.03527</item>
     </string-array>
 
+    <string-array name="area_names">
+        <item>mm²</item>
+        <item>cm²</item>
+        <item>m²</item>
+        <item>a</item>
+        <item>ha</item>
+        <item>km²</item>
+        <item>ft²</item>
+        <item>yd²</item>
+        <item>acre</item>
+    </string-array>
+    <string-array name="area_values">
+        <item>1</item>
+        <item>.01</item>
+        <item>1E-6</item>
+        <item>1E-8</item>
+        <item>1E-10</item>
+        <item>1E-12</item>
+        <item>1.076391E-5</item>
+        <item>1.19599E-6</item>
+        <item>2.471054E-10</item>
+    </string-array>
+
+    <string-array name="volume_names">
+        <item>ml</item>
+        <item>cm³</item>
+        <item>L</item>
+        <item>m³</item>
+        <item>in³</item>
+        <item>ft³</item>
+        <item>yd³</item>
+        <item>gal</item>
+        <item>gallon_dry_us</item>
+        <item>gallon_uk</item>
+        <item>oz</item>
+        <item>oz_uk</item>
+        <item>qt_us</item>
+        <item>qt_uk</item>
+        <item>pt_us</item>
+        <item>pt_uk</item>
+        <item>bbl</item>
+    </string-array>
+    <string-array name="volume_values">
+        <item>1</item>
+        <item>1</item>
+        <item>0.001</item>
+        <item>1E-6</item>
+        <item>0.061023744</item>
+        <item>3.5314E-5</item>
+        <item>1.3079E-6</item>
+        <item>0.000264172</item>
+        <item>0.000227021</item>
+        <item>0.000219969</item>
+        <item>0.033414023</item>
+        <item>0.03519508</item>
+        <item>0.001057082</item>
+        <item>0.000879894</item>
+        <item>0.002114165</item>
+        <item>0.001759789</item>
+        <item>6.2898108E-6</item>
+    </string-array>
+
+    <string-array name="speed_names">
+        <item>m/s</item>
+        <item>m/min</item>
+        <item>km/min</item>
+        <item>km/h</item>
+        <item>ft/s</item>
+        <item>mph</item>
+        <item>Mach</item>
+        <item>kn</item>
+    </string-array>
+    <string-array name="speed_values">
+        <item>1</item>
+        <item>60</item>
+        <item>0.06</item>
+        <item>3.6</item>
+        <item>3.280839895</item>
+        <item>2.236936292</item>
+        <item>0.003015682</item>
+        <item>1.943844492</item>
+    </string-array>
 </resources>

@@ -4,19 +4,25 @@
     <item
         android:id="@+id/nav_unit_converter"
         android:icon="@drawable/convert"
-        android:title="Unit Converter"
+        android:title="@string/unit_converter_name"
         android:checkable="true"
         android:checked="true"/>
     <item
         android:id="@+id/nav_bmi_calculator"
         android:icon="@drawable/health"
-        android:title="BMI Calculator"
+        android:title="@string/bmi_calculator_name"
         android:checkable="true"
         android:checked="false"/>
     <item
         android:id="@+id/nav_temperature_converter"
         android:icon="@drawable/temperature"
-        android:title="Temperature Converter"
+        android:title="@string/temperature_converter_name"
+        android:checkable="true"
+        android:checked="false"/>
+    <item
+        android:id="@+id/nav_currency_converter"
+        android:icon="@drawable/currency"
+        android:title="@string/currency_converter_name"
         android:checkable="true"
         android:checked="false"/>
 </menu>
