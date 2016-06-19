@@ -8,12 +8,6 @@
         android:checkable="true"
         android:checked="true"/>
     <item
-        android:id="@+id/nav_bmi_calculator"
-        android:icon="@drawable/health"
-        android:title="@string/bmi_calculator_name"
-        android:checkable="true"
-        android:checked="false"/>
-    <item
         android:id="@+id/nav_temperature_converter"
         android:icon="@drawable/temperature"
         android:title="@string/temperature_converter_name"
@@ -23,6 +17,12 @@
         android:id="@+id/nav_currency_converter"
         android:icon="@drawable/currency"
         android:title="@string/currency_converter_name"
+        android:checkable="true"
+        android:checked="false"/>
+    <item
+        android:id="@+id/nav_bmi_calculator"
+        android:icon="@drawable/health"
+        android:title="@string/bmi_calculator_name"
         android:checkable="true"
         android:checked="false"/>
 </menu>
